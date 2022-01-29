@@ -1,16 +1,15 @@
 import classes from "./MealsSummary.module.css";
+import logoimage from "../assets/emonslogoBW.png";
 
 const MealsSummary = () => {
   return (
     <section className={classes.summary}>
-      <h2>Delicious Food, Delivered To You</h2>
+      <img className={classes.logoimage} src={logoimage} />
+      <h2>Emon's Indian Takeaway</h2>
+      <p>12 Shirley Road, Southampton, SO15 3EU</p>
       <p>
-        Choose your favorite meal from our broad selection of available meals
-        and enjoy a delicious lunch or dinner at home.
-      </p>
-      <p>
-        All our meals are cooked with high-quality ingredients, just-in-time and
-        of course by experienced chefs!
+        Southampton's premier curry house, specializing in spice and Tandoori
+        dishes. Let the spice ROAR!
       </p>
     </section>
   );

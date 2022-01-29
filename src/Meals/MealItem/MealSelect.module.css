@@ -1,0 +1,6 @@
+.items {
+  z-index: 0;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-left: solid 1px rgb(153, 153, 153);
+}
