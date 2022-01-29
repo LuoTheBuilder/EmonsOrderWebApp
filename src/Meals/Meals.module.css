@@ -1,0 +1,13 @@
+.rightbar {
+  margin-left: 500px;
+  display: block;
+}
+
+.leftbar {
+  position: fixed;
+  display: block;
+  width: 20%;
+  margin: 20px 100px;
+  font-size: 30px;
+  display: absolute;
+}

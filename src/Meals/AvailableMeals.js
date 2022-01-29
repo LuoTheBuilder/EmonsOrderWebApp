@@ -30,11 +30,24 @@ const AvailableMeals = (props) => {
       description: "Basmati Rice",
       price: 2.95,
     },
+    {
+      id: "m5",
+      name: "Peshwari Nan",
+      description: "A sweet nan with coconut filling.",
+      price: 2.5,
+    },
+    {
+      id: "m6",
+      name: "Popadom",
+      description: "Perfect for dipping.",
+      price: 0.7,
+    },
   ];
 
   const mappedMeals = DUMMY_MEALS.map((meal) => (
     <MealItem
       key={meal.id}
+      id={meal.id}
       name={meal.name}
       description={meal.description}
       price={meal.price}

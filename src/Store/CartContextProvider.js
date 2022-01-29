@@ -16,8 +16,8 @@ const cartReducer = (state, action) => {
     };
   }
   return {
-    items: ["liver"],
-    totalAmount: 10,
+    items: [],
+    totalAmount: 0,
   };
   return defaultCartState;
 };
@@ -29,10 +29,10 @@ const CartContextProvider = (props) => {
   );
 
   const addCartHandler = (item) => {
-    dispatchCartState({ type: "ADDEDITEM", item: item });
+    dispatchCartState({ type: "ADDITEM", item: item });
   };
   const removeCartHandler = (item) => {
-    dispatchCartState({ type: "REMOVEITEM", id: id });
+    // dispatchCartState({ type: "REMOVEITEM", id: id });
   };
 
   const cartContext = {
